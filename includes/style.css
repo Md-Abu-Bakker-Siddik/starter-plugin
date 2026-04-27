@@ -1,0 +1,86 @@
+.dwl-pricing-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.dwl-table-title {
+    margin: 0 0 20px;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+/* Card */
+.dwl-pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* Highlight */
+.dwl-pricing-card.is-highlighted {
+    border: 2px solid #4f46e5;
+}
+
+/* Badge */
+.dwl-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4f46e5;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* Price */
+.plan-price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Features */
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+/* Button */
+.dwl-btn {
+    margin-top: auto;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font: inherit;
+    background: #1e293b;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.dwl-btn:focus-visible {
+    outline: 3px solid #0ea5e9;
+    outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .dwl-pricing-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .dwl-pricing-container {
+        grid-template-columns: 1fr;
+    }
+}
